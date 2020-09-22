@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venecia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <header class="container-fluid mb-3">
+                <img class="logo" src="imagenes/logo-veneccia.png" alt="">
+        </header>
+        <main class="row">
+        <nav class="col-sm-12 col-md-3 col-lg-3">
+                
+                        <a class="item-nav" href="index.html">Home</a>
+                        <a class="item-nav" href="sobremi.html">Sobre Mí</a>
+                        <a class="item-nav" href="registrarse.html">Registrese</a>
+                        <a class="item-nav" href="productos.html">Nuestros productos</a>
+                        <a class="item-nav" href="sucursales.html">Sucursales</a>
+        </nav>
+      
+                <section class="col-sm-12 col-md-6 col-lg-6 mb-5">
+                  <form action="show_data.html" target="_blank" meth>
+                    <h1>Registrate:</h1>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputnombre">Nombre:</label>
+                          <input type="text" name="nombre" class="form-control" id="inputnombre" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputapellido">Apellido:</label>
+                          <input type="text" name="apellido" class="form-control" id="inputapellido" required>
+                        </div>
+                      </div>
+                      <fieldset class="form-group">
+                        <div class="row">
+                          <legend class="col-form-label col-sm-12 pt-0">Género:</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                Femenimo
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Masculino
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                  Otro
+                                </label>
+                              </div>
+            
+                          </div>
+                        </div>
+                      </fieldset>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" name="email" class="form-control" id="inputEmail4" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Dirección:</label>
+                      <input type="text" name="direccion" class="form-control" id="inputAddress" placeholder="Av. Santa Fe 123" required>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Ciudad:</label>
+                        <input type="text" name="ciudad" class="form-control" id="inputCity" required>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">Provincia</label>
+                        <select id="inputState" name="provincia"  class="form-control">
+                          <option selected>Elige...</option>
+                                <option>Buenos Aires</option>
+                                <option>Catamarca</option>
+                                <option>Chaco</option>
+                                <option>Chubut</option>
+                                <option>Córdoba</option>
+                                <option>Corrientes</option>
+                                <option>Entre Ríos</option>
+                                <option>Formosa</option>
+                                <option>Jujuy</option>
+                                <option>La Pampa</option>
+                                <option>La Rioja</option>
+                                <option>Mendoza</option>
+                                <option>Misiones</option>
+                                <option>Neuquén</option>
+                                <option>Río Negro</option>
+                                <option>Salta</option>
+                                <option>San Juan</option>
+                                <option>San Luis</option>
+                                <option>Santa Cruz</option>
+                                <option>Santa Fe</option>
+                                <option>Santiago del Estero</option>
+                                <option>Tierra del Fuego</option>
+                                <option>Tucumán</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Código postal</label>
+                        <input type="text" name="codigopostal" class="form-control" id="inputZip" required>
+                      </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                  </form>
+                </section>
+             
+        </main>
+        <footer class="mt-5">
+          <div class="row  social-media mt-2 ">
+            <a class="sociallink mr-2" href="https://www.facebook.com/">
+            <i class="fa fa-facebook-official "> </i></a>
+            <a class="sociallink mr-2" href="https://www.instagram.com/">
+            <i class="fa fa-instagram "> </i></a>
+            <a class="sociallink mr-2" href="https://www.pinterest.com/">
+            <i class="fa fa-pinterest-p"> </i></a>
+          </div>
+            
+        </footer>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
